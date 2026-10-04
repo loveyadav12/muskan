@@ -1,0 +1,246 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Birthday Surprise ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         BACKGROUND EFFECTS
+    ========================== -->
+
+    <div class="bg-glow glow-one"></div>
+    <div class="bg-glow glow-two"></div>
+
+    <div id="particles"></div>
+
+
+    <!-- =========================
+         PAGE 1 - INTRO
+    ========================== -->
+
+    <section id="introPage" class="page active">
+
+        <div class="birthday-card">
+
+            <div class="card-icon">🎁</div>
+
+            <p class="small-text">A LITTLE SURPRISE FOR YOU...</p>
+
+            <h1>
+                I think about you everytime
+                <span>b/s you are my fav. best friend</span>
+            </h1>
+
+            <p class="message">
+                Wait... wait... 😂<br><br>
+
+                Everyone must have wished you a happy birthday.
+                But your <strong>Best friend</strong> has prepared
+                a small gift specially for you. ❤️
+                <br><br>
+
+                So... are you ready to see it?
+            </p>
+
+            <div class="buttons">
+
+                <button id="yesBtn" class="yes-btn">
+                    YES ❤️
+                </button>
+
+                <button id="noBtn" class="no-btn">
+                    NO 😒
+                </button>
+
+            </div>
+
+            <p class="hint">
+                Choose wisely... 👀
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         NO ERROR POPUP
+    ========================== -->
+
+    <div id="errorOverlay" class="overlay">
+
+        <div class="error-popup">
+
+            <div class="error-icon">⚠️</div>
+
+            <h2 id="errorTitle">
+                ERROR!
+            </h2>
+
+            <p id="errorMessage">
+                You can't even see your little brother's gift?
+                Shame on you!
+            </p>
+
+            <div class="error-counter">
+                ERROR LEVEL:
+                <span id="errorCount">1</span>
+            </div>
+
+            <button id="closeError">
+                Okay okay 😭
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================
+         PAGE 2 - CELEBRATION
+    ========================== -->
+
+    <section id="celebrationPage" class="page">
+
+        <div id="confettiContainer"></div>
+        <div id="balloonContainer"></div>
+
+        <div class="celebration-content">
+
+            <div class="cake">🎂</div>
+
+            <h1 class="birthday-title">
+                HAPPY BIRTHDAY MY PANDITAIN JI
+            </h1>
+
+            <h2 class="sister-name">
+                MY AMAZING BEST FRIEND ❤️
+            </h2>
+
+            <p class="birthday-message">
+                May your life always be filled with happiness,
+                laughter, love and beautiful memories.
+                <br><br>
+                Your Friend  loves you! 🥹❤️
+            </p>
+
+            <div class="heart-animation">
+                ❤️ 💕 ❤️
+            </div>
+
+            <button id="continueBtn" class="continue-btn">
+                Continue ✨
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         PAGE 3 - SWIPE GALLERY
+    ========================== -->
+
+    <section id="galleryPage" class="page">
+
+        <div class="gallery-header">
+
+            <p class="gallery-small">
+                A COLLECTION OF MEMORIES
+            </p>
+
+            <h1>
+                Our Beautiful Memories ❤️
+            </h1>
+
+
+        </div>
+
+
+
+
+        <div class="carousel-wrapper">
+
+            <div id="carousel" class="carousel">
+
+                <!-- PHOTO 1 -->
+                <div class="photo-card" data-image="images/1.jpeg">
+                    <img src="images/1.jpeg" alt="Memory 1">
+                    <div class="photo-number">1</div>
+                </div>
+
+                <!-- PHOTO 2 -->
+                <div class="photo-card" data-image="images/2.jpeg">
+                    <img src="images/2.jpeg" alt="Memory 2">
+                    <div class="photo-number">2</div>z
+                </div>
+
+                <!-- PHOTO 3 -->
+                <div class="photo-card" data-image="images/3.jpeg">
+                    <img src="images/3.jpeg" alt="Memory 3">
+                    <div class="photo-number">3</div>
+                </div>
+
+                <!-- PHOTO 4 -->
+                <div class="photo-card" data-image="images/4.jpeg">
+                    <img src="images/4.jpeg" alt="Memory 4">
+                    <div class="photo-number">4</div>
+                </div>
+
+                <!-- PHOTO 5 -->
+                <div class="photo-card" data-image="images/5.jpeg">
+                    <img src="images/5.jpeg" alt="Memory 5">
+                    <div class="photo-number">5</div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <p class="gallery-hint">
+            Tap any photo to open it ✨
+        </p>
+
+    </section>
+
+
+
+    <!-- =========================
+         FULLSCREEN PHOTO
+    ========================== -->
+
+    <div id="photoViewer" class="photo-viewer">
+
+        <button id="closeViewer" class="close-viewer">
+            ✕
+        </button>
+
+        <div class="viewer-content">
+
+            <img id="viewerImage" src="" alt="Full Screen Photo">
+
+            <p>
+                A beautiful memory ❤️
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
